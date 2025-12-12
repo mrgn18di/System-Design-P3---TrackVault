@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TrackVault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>TrackVault</h1>
+    <p>Search iTunes tracks and save your favourites.</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>Search Songs</h2>
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Type an artist or song title..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-results" class="card-list"></div>
+    </section>
+
+    <section class="favorites-section">
+      <h2>Your Favorites</h2>
+      <div id="favorites" class="card-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
